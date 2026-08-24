@@ -1,0 +1,13 @@
+resources:
+  pipelines:
+    pipeline_demopipeline:
+      name: demopipeline
+      libraries:
+        - glob:
+            include: /Workspace/Users/veertekcrux@gmail.com/tekcruxassetbundles/dabproject/src/pipelines/demopipeline1/transformations/**
+      schema: bronze
+      photon: true
+      catalog: assetbundles
+      serverless: true
+      root_path: ../../src/pipelines/demopipeline1
+
